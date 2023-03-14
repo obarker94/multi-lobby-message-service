@@ -20,13 +20,33 @@ Each element of the application will be containerised and managed through Docker
 
 0. Init project with both AWS and Minikube kubernetes. ✅
 
-1. Setup nginx to route traffic to spin up 'Hello World' instances on request. Instances must close if inactive.
+1. Setup ingress controller to route traffic to 'Hello World' page on request. ✅
 
+2. Create a service will take the route from an ingress controller and create a new instance of a container. i.e. Hello World 
+
+3. Pass in lobby arguments to the new container.
 
 
 ## Learnings
 
 ### 14/03/2023
+
+Kubernetes single node local configurations have been a bit frustrating to to get going. The experience of updating deployments
+on `eksctl` has been smoother than via Minikube.
+
+The main problem that I ran into was wanting to access the pod directly to test the ingress controller. i.e. pod-url/hello. However,
+this isn't the case from what I've found out of the box. The single node cluster doesn't appear to have any external IPs setup so for now
+it makes more sense for me to run:
+
+```sh
+kubectl port-forward <pod-name> 8080:80
+```
+
+After we've done that, our test ingress controller routes invalid routes to a /404 and our valid route to a 'Hello World' page.
+
+Next step is going to be
+
+### 13/03/2023
 
 Deployed a simple nginx container on AWS EKS, Minikube and set up dashboards on both.
 Development will be carried out on a single node in Minikube and ported to AWS at the end of each milestone for testing.
