@@ -14,7 +14,7 @@ Highly subject to change and this will be updated as the project progresses.
 
 Each element of the application will be containerised and managed through Docker. As the application grows, it may be required to use Kubernetes OR an AWS ECS.
 
-![DS Diagram](https://imgur.com/a/rPP2b3A)
+![DS Diagram](https://i.imgur.com/WBzCYTT.png)
 
 ## Milestones
 
