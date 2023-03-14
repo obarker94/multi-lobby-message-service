@@ -16,7 +16,7 @@ Each element of the application will be containerised and managed through Docker
 
 ![DS Diagram](https://i.imgur.com/unhMuGq.png)
 
-## Milestones
+# Milestones
 
 0. Init project with both AWS and Minikube kubernetes. ✅
 
@@ -27,7 +27,7 @@ Each element of the application will be containerised and managed through Docker
 3. Pass in lobby arguments to the new container.
 
 
-## Learnings
+# Learnings
 
 ## 14/03/2023
 
