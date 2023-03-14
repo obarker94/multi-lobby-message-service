@@ -29,7 +29,7 @@ Each element of the application will be containerised and managed through Docker
 
 ## Learnings
 
-### 14/03/2023
+## 14/03/2023
 
 Kubernetes single node local configurations have been a bit frustrating to to get going. The experience of updating deployments
 on `eksctl` has been smoother than via Minikube.
@@ -46,7 +46,7 @@ After we've done that, our test ingress controller routes invalid routes to a /4
 
 Next step is going to be
 
-### 13/03/2023
+## 13/03/2023
 
 Deployed a simple nginx container on AWS EKS, Minikube and set up dashboards on both.
 Development will be carried out on a single node in Minikube and ported to AWS at the end of each milestone for testing.
